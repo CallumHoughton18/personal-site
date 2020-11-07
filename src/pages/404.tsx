@@ -2,7 +2,7 @@ import React from "react";
 
 const NotFound = (): JSX.Element => (
   <main>
-    <p>Sorry, page not found!</p>
+    <p>Page not found :(</p>
   </main>
 );
 
