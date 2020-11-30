@@ -5,8 +5,30 @@ module.exports = {
   },
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+       'main-background': "url('/background.jpg')",
+      })
+    },
+    fontFamily: {
+      'sans': ['Helvetica', 'Arial', 'sans-serif'],
+    },
+    filter: { // defaults to {}
+    'none': 'none',
+    'grayscale': 'grayscale(1)',
+    'invert': 'invert(1)',
+    'sepia': 'sepia(1)',
   },
-  variants: {},
-  plugins: [],
+  backdropFilter: { // defaults to {}
+    'none': 'none',
+    'blur': 'blur(3px)',
+  },
+  },
+  variants: {
+    filter: ['responsive'], // defaults to ['responsive']
+    backdropFilter: ['responsive'], // defaults to ['responsive']
+  },
+  plugins: [
+    require('tailwindcss-filters'),
+  ],
 }

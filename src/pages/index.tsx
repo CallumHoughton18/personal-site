@@ -7,7 +7,10 @@ import IntroCard from "@/components/IntroCard";
 const Home = (props: PageProps): JSX.Element => {
   console.log(props.uri);
   return (
-    <main>
+    //TODO: this works for now, but there has to be a better way to load a background image via Gatsby?
+    // Currently just retrieving file from static folder
+    // Maybe using a hook?
+    <main className="bg-main-background bg-cover flex flex-col h-screen">
       <header>
         <Header />
       </header>
