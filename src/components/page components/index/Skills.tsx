@@ -4,7 +4,9 @@ import React from "react";
 const Skills = (): JSX.Element => {
   return (
     <div className="text-gray-100">
-      <h2 className=" text-center text-4xl font-bold">Experience In:</h2>
+      <h2 className=" text-center text-4xl font-bold tracking-wide">
+        Experience In:
+      </h2>
       <div className="flex flex-wrap justify-evenly md:content-center mt-20 md:flex-row flex-col">
         <List items={["C#", "TypeScript", "Python"]} />
         <List items={["Xamarin Forms", "React", "Flask"]} />
