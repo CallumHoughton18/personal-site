@@ -10,6 +10,9 @@ module.exports = {
        'main-background': "url('/background.jpg')",
       })
     },
+    width: {
+      'overflow': '102%',
+    },
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
     },

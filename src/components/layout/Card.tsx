@@ -1,16 +1,23 @@
 import React, { ReactNode } from "react";
 
 type CardProps = {
-  style?: string;
+  cardStyle?: string;
+  innerChildrenStyle?: string;
   children?: ReactNode;
 };
 
-const Card = ({ style, children }: CardProps): JSX.Element => {
+const Card = ({
+  cardStyle,
+  innerChildrenStyle,
+  children,
+}: CardProps): JSX.Element => {
   return (
     <div
-      className={`flex flex-row m-8 rounded-lg border shadow-l bg-gray-700 border-transparent ${style}`}
+      className={`flex flex-row m-8 rounded-lg border shadow-l bg-gray-700 border-transparent ${cardStyle}`}
     >
-      <div className="flex flex-col justify-center items-center p-10">
+      <div
+        className={`flex flex-col justify-center items-center ${innerChildrenStyle}`}
+      >
         {children}
       </div>
     </div>

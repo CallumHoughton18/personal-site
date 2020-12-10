@@ -10,7 +10,10 @@ type IntroCardProps = {
 const IntroCard = (props: IntroCardProps): JSX.Element => {
   return (
     <div className="relative">
-      <Card style="lg:max-w-6xl backdrop-blur bg-opacity-80 border-gray-800">
+      <Card
+        cardStyle="lg:max-w-6xl backdrop-blur bg-opacity-80 border-gray-800"
+        innerChildrenStyle="p-10"
+      >
         <CircleAvatar />
         <span className="font-sans text-center text-gray-400 sm:text-xl xl:text-2xl sm:mb-2 sm:mt-5 md:mb-5 md:mt-10">
           Callum Houghton

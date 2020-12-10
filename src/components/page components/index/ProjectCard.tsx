@@ -12,22 +12,25 @@ const ProjectCard = (props: ProjectCardProps): JSX.Element => {
     query {
       file(relativePath: { eq: "xlsxapp.png" }) {
         childImageSharp {
-          fixed(width: 300, height: 200) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 800, quality: 100) {
+            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluidLimitPresentationSize
           }
         }
       }
     }
   `);
+  console.log(data.file.childImageSharp);
   return (
-    <Card style="max-w-xl">
+    <Card cardStyle="max-w-xl overflow-hidden shadow-inner border-none">
       <Img
-        fixed={data.file.childImageSharp.fixed}
-        className="w-full"
+        fluid={data.file.childImageSharp.fluid}
         alt="project name"
+        className="w-overflow"
       ></Img>
       <div className="px-6 py-4 mt-8">
-        <div className=" text-gray-50 font-bold text-xl mb-2">Project Name</div>
+        <div className=" text-gray-50 font-bold text-xl">Project Name</div>
+        <hr className="mb-5 border border-gray-100"></hr>
         <p className="text-white text-base">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
           quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
