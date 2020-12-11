@@ -2,6 +2,9 @@ import Card from "@/components/layout/Card";
 import { graphql, useStaticQuery } from "gatsby";
 import React, { ReactNode } from "react";
 import Img from "gatsby-image";
+import IconWithLink from "@/components/layout/IconWithLink";
+import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 type ProjectCardProps = {
   children?: ReactNode;
@@ -20,7 +23,6 @@ const ProjectCard = (props: ProjectCardProps): JSX.Element => {
       }
     }
   `);
-  console.log(data.file.childImageSharp);
   return (
     <Card cardStyle="max-w-xl overflow-hidden shadow-inner border-none">
       <Img
@@ -28,7 +30,20 @@ const ProjectCard = (props: ProjectCardProps): JSX.Element => {
         alt="project name"
         className="w-overflow"
       ></Img>
-      <div className="px-6 py-4 mt-8">
+      <div className="flex flex-row justify-start text-gray-400 self-start px-6 mt-4 text-xl">
+        <IconWithLink icon={faGithub} link="https://github.com/" style="mr-5" />
+        <IconWithLink
+          icon={faYoutube}
+          link="https://github.com/"
+          style="mr-5"
+        />
+        <IconWithLink
+          icon={faExternalLinkAlt}
+          link="https://github.com/"
+          style=""
+        />
+      </div>
+      <div className="px-6 pb-4 pt-2">
         <div className=" text-gray-50 font-bold text-xl">Project Name</div>
         <hr className="mb-5 border border-gray-100"></hr>
         <p className="text-white text-base">
