@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import IntroCard from "@/components/page components/index/IntroCard";
 import Section from "@/components/layout/Section";
 import Skills from "@/components/page components/index/Skills";
-import ProjectCard from "@/components/page components/index/ProjectCard";
+import Projects from "@/components/page components/index/Projects";
 
 const Home = (props: PageProps): JSX.Element => {
   console.log(props.uri);
@@ -24,9 +24,7 @@ const Home = (props: PageProps): JSX.Element => {
         <Skills />
       </Section>
       <div className="flex items-center justify-center mt-44 ml-20 mr-20">
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <Projects />
       </div>
     </main>
   );
