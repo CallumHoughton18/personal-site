@@ -1,7 +1,6 @@
 import Card from "@/components/layout/Card";
-import { graphql, useStaticQuery } from "gatsby";
 import React, { ReactNode } from "react";
-import Img from "gatsby-image";
+import Img, { FluidObject } from "gatsby-image";
 import IconWithLink from "@/components/layout/IconWithLink";
 import { IconWithLinks } from "@/components/types";
 
@@ -9,24 +8,14 @@ type ProjectCardProps = {
   children?: ReactNode;
   projectLinks: IconWithLinks[];
   projectDesc: string;
+  ProjectImg: FluidObject;
 };
 
 const ProjectCard = ({
   projectLinks,
   projectDesc,
+  ProjectImg,
 }: ProjectCardProps): JSX.Element => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "xlsxapp.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 800, quality: 100) {
-            ...GatsbyImageSharpFluid
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
-    }
-  `);
   const projectIcons = projectLinks.map((val, indx) => {
     return (
       <IconWithLink
@@ -39,11 +28,7 @@ const ProjectCard = ({
   });
   return (
     <Card cardStyle="max-w-xl overflow-hidden shadow-inner border-none w-screen w-full">
-      <Img
-        fluid={data.file.childImageSharp.fluid}
-        alt="project name"
-        className="w-overflow"
-      ></Img>
+      <Img fluid={ProjectImg} alt="project name" className="w-overflow"></Img>
       <div className="flex flex-row justify-start text-gray-400 self-start px-6 mt-4 text-xl">
         {projectIcons}
       </div>
