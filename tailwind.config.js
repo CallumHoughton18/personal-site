@@ -13,6 +13,9 @@ module.exports = {
     width: {
       'overflow': '102%',
     },
+    flex: {
+      '25':"0 1 25%"
+    },
     fontFamily: {
       'sans': ['Helvetica', 'Arial', 'sans-serif'],
     },

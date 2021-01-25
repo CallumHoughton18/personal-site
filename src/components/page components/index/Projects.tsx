@@ -8,7 +8,6 @@ import ProjectCard from "./ProjectCard";
 const Projects = (): JSX.Element => {
   //TODO: add type safety onto useProjectImages hook return value
   const images = useProjectImages();
-  console.log(images);
 
   //TODO: find better way of assigning project Img to each card, with safer index limit
   const projImg1 = images[0].node.childImageSharp.fluid as FluidObject;

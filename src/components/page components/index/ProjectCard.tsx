@@ -27,8 +27,12 @@ const ProjectCard = ({
     );
   });
   return (
-    <Card cardStyle="max-w-xl overflow-hidden shadow-inner border-none w-screen w-full">
-      <Img fluid={ProjectImg} alt="project name" className="w-overflow"></Img>
+    <Card cardStyle="max-w-xl overflow-hidden shadow-inner border-none flex-25">
+      <Img
+        fluid={ProjectImg}
+        alt="project name"
+        className="w-overflow h-56"
+      ></Img>
       <div className="flex flex-row justify-start text-gray-400 self-start px-6 mt-4 text-xl">
         {projectIcons}
       </div>
