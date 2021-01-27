@@ -1,13 +1,9 @@
 import Card from "@/components/layout/Card";
-import React, { ReactNode } from "react";
+import React from "react";
 import CircleAvatar from "./CircleAvatar";
 import ContactsRibbon from "./ContactsRibbon";
 
-type IntroCardProps = {
-  children?: ReactNode;
-};
-
-const IntroCard = (props: IntroCardProps): JSX.Element => {
+const IntroCard = (): JSX.Element => {
   return (
     <div className="relative">
       <Card
