@@ -23,7 +23,7 @@ const Home = (props: PageProps): JSX.Element => {
       <Section>
         <Skills />
       </Section>
-      <div className="flex flex-wrap items-start justify-center mt-44 ml-20 mr-20">
+      <div className="flex flex-wrap items-start justify-center mt-44 xl:ml-20 xl:mr-20">
         <Projects />
       </div>
     </main>
