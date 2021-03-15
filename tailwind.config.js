@@ -13,6 +13,9 @@ module.exports = {
     width: {
       'overflow': '102%',
     },
+    height: {
+      'card': '33rem'
+    },
     flex: {
       '25':"0 1 25%",
       '50':"0 1 50%"

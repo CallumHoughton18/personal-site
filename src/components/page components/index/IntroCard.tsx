@@ -11,7 +11,7 @@ const IntroCard = (): JSX.Element => {
         innerChildrenStyle="p-10"
       >
         <CircleAvatar />
-        <span className="font-sans text-center text-gray-400 sm:text-xl xl:text-2xl sm:mb-2 sm:mt-5 md:mb-5 md:mt-10">
+        <span className="font-sans text-center text-gray-400 sm:text-xl xl:text-2xl sm:mb-2 sm:mt-5 md:mb-5 md:mt-10 tracking-wide">
           Callum Houghton
         </span>
         <h1 className="font-sans text-center text-gray-100 sm:text-4xl xl:text-7xl font-extrabold tracking-wide">

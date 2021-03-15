@@ -16,7 +16,7 @@ const Card = ({
       className={`flex flex-row m-8 rounded-lg border shadow-l bg-gray-700 border-transparent ${cardStyle}`}
     >
       <div
-        className={`flex flex-col justify-center items-center ${innerChildrenStyle}`}
+        className={`flex flex-col justify-start items-center ${innerChildrenStyle}`}
       >
         {children}
       </div>

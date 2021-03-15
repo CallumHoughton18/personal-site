@@ -99,12 +99,12 @@ const ProjectInfo = (): ProjectInfo[] => {
           style: "",
         },
       ],
-      tech: ["Python", "Django", "JavaScript"],
+      tech: ["Python", "Django", "JavaScript", "Postgres"],
     },
     {
       title: "ChemViewAR",
       desc:
-        "Allows the viewing of molecular models (sourced from ChemTube3D and the Protein Data Bank) in augmented reality. Built using Unity and ARCore.",
+        "Allows the viewing of molecular models (sourced from ChemTube3D and the Protein Data Bank) in augmented reality, the models are converted from standard chemical file formats. Built using Unity and ARCore.",
       links: [
         {
           icon: faGithub,
@@ -117,8 +117,13 @@ const ProjectInfo = (): ProjectInfo[] => {
             "https://play.google.com/store/apps/details?id=com.Callum.ChemViewAR",
           style: "",
         },
+        {
+          icon: faExternalLinkAlt,
+          link:
+            "https://medium.com/@callumhoughton18/creating-ar-ready-models-from-chemical-file-formats-cc8b927e5339",
+        },
       ],
-      tech: ["C#", "Unity", "Arcore"],
+      tech: ["C#", "Unity", "Arcore", "Blender"],
     },
   ];
 };

@@ -32,7 +32,7 @@ const ProjectCard = ({
     );
   });
   return (
-    <Card cardStyle="max-w-xl overflow-hidden shadow-inner border-none sm:flex-50 xl:flex-25">
+    <Card cardStyle="max-w-xl overflow-hidden shadow-inner border-none sm:flex-50 xl:flex-25 h-card">
       <Img
         fluid={ProjectImg}
         alt="project name"
@@ -44,7 +44,7 @@ const ProjectCard = ({
       <div className="px-6 pb-4 pt-2">
         <div className=" text-gray-50 font-bold text-xl">{projectName}</div>
         <hr className="mb-5 border border-gray-100"></hr>
-        <p className="text-white text-base">{projectDesc}</p>
+        <p className="text-white text-sm leading-relaxed">{projectDesc}</p>
       </div>
       <PillsCollection pillsText={projectTech} />
     </Card>

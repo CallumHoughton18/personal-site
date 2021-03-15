@@ -6,7 +6,7 @@ type PillProps = {
 
 const Pill = ({ pillText }: PillProps): JSX.Element => {
   return (
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 m-1 text-sm font-semibold text-gray-700">
+    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 mr-0.5 ml-0.5 mt-1 text-xs font-semibold text-gray-700 tracking-wide">
       {pillText}
     </span>
   );

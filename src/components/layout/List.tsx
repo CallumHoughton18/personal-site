@@ -1,5 +1,4 @@
-import React, { ReactNode } from "react";
-
+import React from "react";
 type ListProps = {
   items: string[];
 };
@@ -12,7 +11,11 @@ const List = ({ items }: ListProps): JSX.Element => {
       </li>
     );
   });
-  return <ul className="text-xl list-disc mb-5 md:mb-0">{listItems}</ul>;
+  return (
+    <ul className="text-xl list-disc mb-5 md:mb-0 tracking-widest">
+      {listItems}
+    </ul>
+  );
 };
 
 export default List;
