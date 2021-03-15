@@ -13,6 +13,8 @@ const Projects = (): JSX.Element => {
     return (
       <ProjectCard
         key={indx}
+        projectName={project.info.title}
+        projectTech={project.info.tech}
         ProjectImg={project.image}
         projectDesc={project.info.desc}
         projectLinks={project.info.links}

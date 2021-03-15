@@ -10,7 +10,7 @@ const Skills = (): JSX.Element => {
       <div className="flex flex-wrap justify-evenly md:content-center mt-20 md:flex-row flex-col">
         <List items={["C#", "TypeScript", "Python"]} />
         <List items={["Xamarin Forms", "React", "Flask"]} />
-        <List items={["Jenkins", "App Centre", "Azure Pipelines"]} />
+        <List items={["Jenkins", "App Center", "Azure Pipelines"]} />
       </div>
     </div>
   );

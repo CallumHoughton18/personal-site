@@ -3,18 +3,23 @@ import React, { ReactNode } from "react";
 import Img, { FluidObject } from "gatsby-image";
 import IconWithLink from "@/components/layout/IconWithLink";
 import { IconWithLinks } from "@/components/types";
+import PillsCollection from "@/components/layout/PillCollection";
 
 type ProjectCardProps = {
   children?: ReactNode;
+  projectName: string;
   projectLinks: IconWithLinks[];
   projectDesc: string;
+  projectTech: string[];
   ProjectImg: FluidObject;
 };
 
 const ProjectCard = ({
+  projectName,
   projectLinks,
   projectDesc,
   ProjectImg,
+  projectTech,
 }: ProjectCardProps): JSX.Element => {
   const projectIcons = projectLinks.map((val, indx) => {
     return (
@@ -37,22 +42,11 @@ const ProjectCard = ({
         {projectIcons}
       </div>
       <div className="px-6 pb-4 pt-2">
-        <div className=" text-gray-50 font-bold text-xl">Project Name</div>
+        <div className=" text-gray-50 font-bold text-xl">{projectName}</div>
         <hr className="mb-5 border border-gray-100"></hr>
         <p className="text-white text-base">{projectDesc}</p>
       </div>
-      {/*TODO:Below could be its own component*/}
-      <div className="px-6 py-4">
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-          C#
-        </span>
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
-          ReactJS
-        </span>
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
-          Python
-        </span>
-      </div>
+      <PillsCollection pillsText={projectTech} />
     </Card>
   );
 };
