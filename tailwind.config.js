@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
@@ -9,6 +11,25 @@ module.exports = {
       backgroundImage: theme => ({
        'main-background': "url('/background.jpg')",
       })
+    },
+    colors: {
+      nordBlue: {
+        DEFAULT: '#5e81ac'
+      },
+      nordBg: {
+        DEFAULT: '#434c5e'
+      },
+      nordGreen: {
+        DEFAULT: '#a3be8c'
+      },
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.gray,
+      indigo: colors.indigo,
+      red: colors.rose,
+      yellow: colors.amber,
     },
     width: {
       'overflow': '102%',

@@ -1,11 +1,5 @@
 import { IconWithLinks } from "@/components/types";
-import {
-  faAndroid,
-  faApple,
-  faChrome,
-  faGithub,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt, faMobile } from "@fortawesome/free-solid-svg-icons";
 
 type ProjectInfo = {
@@ -115,7 +109,7 @@ const ProjectInfo = (): ProjectInfo[] => {
           icon: faMobile,
           link:
             "https://play.google.com/store/apps/details?id=com.Callum.ChemViewAR",
-          style: "",
+          style: "mr-5",
         },
         {
           icon: faExternalLinkAlt,

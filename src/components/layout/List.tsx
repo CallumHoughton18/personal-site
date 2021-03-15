@@ -1,13 +1,19 @@
 import React from "react";
-type ListProps = {
-  items: string[];
+
+export type ListProps = {
+  items: ListElement[];
+};
+
+export type ListElement = {
+  id: string | number;
+  content: JSX.Element;
 };
 
 const List = ({ items }: ListProps): JSX.Element => {
   const listItems = items.map((item, indx) => {
     return (
-      <li key={`${item}-${indx}`} className="mb-1">
-        {item}
+      <li key={`${item.id}-${indx}`} className="mb-1">
+        {item.content}
       </li>
     );
   });
