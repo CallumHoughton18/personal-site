@@ -17,10 +17,16 @@ module.exports = {
         DEFAULT: '#5e81ac'
       },
       nordBg: {
-        DEFAULT: '#434c5e'
+        light: '#3b4252',
+        DEFAULT: '#434c5e',
+        dark: '#2e3440'
       },
       nordGreen: {
         DEFAULT: '#a3be8c'
+      },
+      nordSnowStorm: {
+        light: '#eceff4',
+        default: '#d8dee9'
       },
       transparent: 'transparent',
       current: 'currentColor',
@@ -61,5 +67,6 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-filters'),
+    require('tailwindcss-textshadow')
   ],
 }

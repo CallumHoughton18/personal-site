@@ -20,12 +20,24 @@ const Home = (props: PageProps): JSX.Element => {
       <div className="flex items-center justify-center mt-10 mb-36">
         <IntroCard />
       </div>
-      <Section>
-        <Skills />
+      <Section style="bg-nordBg">
+        <div className="text-gray-100">
+          <h2 className=" text-center text-4xl font-bold tracking-wide text-nordSnowStorm-light text-shadow-md">
+            Experience In:
+          </h2>
+          <Skills />
+        </div>
       </Section>
-      <div className="flex flex-wrap items-start justify-center mt-44 xl:ml-20 xl:mr-20">
-        <Projects />
-      </div>
+      <Section>
+        <div className="backdrop-blur">
+          <h2 className="text-center text-4xl font-bold tracking-wide mb-10 text-nordSnowStorm-light text-shadow-md">
+            Personal Projects
+          </h2>
+          <div className="flex flex-wrap items-start justify-center xl:ml-20 xl:mr-20">
+            <Projects />
+          </div>
+        </div>
+      </Section>
     </main>
   );
 };

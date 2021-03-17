@@ -12,7 +12,7 @@ type ProjectInfo = {
 const ProjectInfo = (): ProjectInfo[] => {
   return [
     {
-      title: "XLSX Bulk Data Extractor",
+      title: "XLSX Data Extractor",
       desc:
         "A WPF application built to demonstrate the data extraction capabilities of the XLSX Data Extractor library, which is built on top of OpenXML. The application allows mass data extraction from a collection of XLSX reports",
       links: [
