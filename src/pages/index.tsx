@@ -5,6 +5,7 @@ import IntroCard from "@/components/page components/index/IntroCard";
 import Section from "@/components/layout/Section";
 import Skills from "@/components/page components/index/Skills";
 import Projects from "@/components/page components/index/Projects";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const Home = (props: PageProps): JSX.Element => {
   console.log(props.uri);

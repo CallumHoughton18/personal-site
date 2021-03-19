@@ -18,7 +18,6 @@ const CircleAvatar = (): JSX.Element => {
     <Img
       className="transform scale-75 rounded-full ring-4 ring-white shadow-m sm:scale-100"
       fixed={data.file.childImageSharp.fixed}
-      alt="Picture of Callum"
     />
   );
 };
