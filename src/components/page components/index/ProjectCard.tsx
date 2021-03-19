@@ -32,7 +32,7 @@ const ProjectCard = ({
     );
   });
   return (
-    <Card cardStyle="max-w-xl overflow-hidden shadow-inner border-none sm:flex-50 xl:flex-25 h-card">
+    <Card cardStyle="max-w-xl overflow-hidden shadow-inner border-none sm:flex-50 xl:flex-25 sm:h-card mt-8 sm:m-8">
       <Img
         fluid={ProjectImg}
         alt="project name"

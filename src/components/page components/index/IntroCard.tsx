@@ -18,7 +18,7 @@ const IntroCard = (): JSX.Element => {
           Web / Mobile Developer
         </h1>
       </Card>
-      <div className="absolute m-8 top-16 right-6 text-2xl sm:text-3xl md:text-4xl text-gray-300">
+      <div className="absolute sm:mr-8 top-16 right-6 text-2xl sm:text-3xl md:text-4xl text-gray-300">
         <ContactsRibbon />
       </div>
     </div>

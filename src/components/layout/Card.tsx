@@ -13,7 +13,7 @@ const Card = ({
 }: CardProps): JSX.Element => {
   return (
     <div
-      className={`flex flex-row m-8 rounded-lg border shadow-l bg-nordBg border-transparent ${cardStyle}`}
+      className={`flex flex-row rounded-lg border shadow-l bg-nordBg border-transparent ${cardStyle}`}
     >
       <div
         className={`flex flex-col justify-start items-center ${innerChildrenStyle}`}
