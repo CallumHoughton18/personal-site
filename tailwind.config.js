@@ -25,6 +25,7 @@ module.exports = {
         DEFAULT: '#a3be8c'
       },
       nordSnowStorm: {
+        lighter: "#e5e9f0",
         light: '#eceff4',
         default: '#d8dee9'
       },

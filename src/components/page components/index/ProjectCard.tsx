@@ -26,7 +26,7 @@ const ProjectCard = ({
       <IconWithLink
         icon={val.icon}
         link={val.link}
-        style={val.style}
+        style={`${val.style} hover:text-nordSnowStorm-lighter active:text-nordSnowStorm-lighter`}
         key={indx}
       />
     );

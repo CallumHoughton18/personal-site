@@ -13,14 +13,15 @@ const ContactsRibbon = (): JSX.Element => {
       <IconWithLink
         link="https://github.com/callumhoughton18"
         icon={faGithubSquare}
-        style="mb-2"
+        style="mb-2 hover:text-nordSnowStorm-lighter active:text-nordSnowStorm-lighter"
       />
       <IconWithLink
         icon={faTwitterSquare}
-        style="mb-2"
+        style="mb-2 hover:text-nordSnowStorm-lighter active:text-nordSnowStorm-lighter"
         link="https://twitter.com/CallummmmmmH"
       />
       <IconWithLink
+        style="hover:text-nordSnowStorm-lighter active:text-nordSnowStorm-lighter"
         icon={faLinkedin}
         link="https://uk.linkedin.com/in/callum-houghton-346365114"
       />
