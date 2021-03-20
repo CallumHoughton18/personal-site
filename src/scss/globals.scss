@@ -1,7 +1,9 @@
 html {
+  background-color: #717783;
   background: url("../images/background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+  height: -webkit-fill-available;
+  }
