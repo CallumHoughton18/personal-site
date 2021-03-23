@@ -6,6 +6,8 @@ import Section from "@/components/layout/Section";
 import Skills from "@/components/page components/index/Skills";
 import Projects from "@/components/page components/index/Projects";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Header from "@/components/Header";
+import PageWithNavBar from "@/components/layout/PageWithHeader";
 
 const Home = (props: PageProps): JSX.Element => {
   console.log(props.uri);
@@ -13,10 +15,7 @@ const Home = (props: PageProps): JSX.Element => {
     //TODO: this works for now, but there has to be a better way to load a background image via Gatsby?
     // Currently just retrieving file from static folder
     // Maybe using a hook?
-    <main className="flex flex-col h-screen">
-      {/* <header>
-        <Header />
-      </header> */}
+    <PageWithNavBar header={<Header />}>
       <div className="flex items-center justify-center mt-10 mb-36">
         <IntroCard />
       </div>
@@ -38,7 +37,7 @@ const Home = (props: PageProps): JSX.Element => {
           </div>
         </div>
       </Section>
-    </main>
+    </PageWithNavBar>
   );
 };
 

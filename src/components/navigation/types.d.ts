@@ -1,5 +1,6 @@
 type NavBarProps = {
   title: string;
+  className: string;
   navItems: NavItem[];
 };
 
