@@ -7,19 +7,20 @@ const NavBar = (props: NavBarProps): JSX.Element => {
   });
   return (
     <nav
-      className={`flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-transparent mb-3 ${props.className}`}
+      className={`flex flex-wrap items-center justify-between px-2 py-2 mb-3 ${props.className}`}
     >
-      <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-        <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-          <a className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white tracking-wide">
+      <div className="sm:container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div className="max-h-0 max-w-0 sm:max-w-full sm:max-h-full relative flex justify-between sm:w-auto sm:static sm:block sm:justify-start">
+          <a
+            className={`leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap ${props.titleStyle} invisible sm:visible`}
+          >
             {props.title}
           </a>
         </div>
-        <div
-          className="lg:flex flex-grow items-center flex"
-          id="example-navbar-danger"
-        >
-          <ul className="flex flex-row list-none lg:ml-auto tracking-wide">
+        <div className="flex flex-grow items-center">
+          <ul
+            className={`flex flex-row sm:ml-auto cursor-pointer ${props.navItemsStyle}`}
+          >
             {navListItems}
           </ul>
         </div>
