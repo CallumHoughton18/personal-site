@@ -1,6 +1,23 @@
 module.exports = {
   // Since `gatsby-plugin-typescript` is automatically included in Gatsby you
   // don't need to define it here (just if you need to change the options)
+  siteMetadata: {
+    title: 'Gatsby Default Starter',
+    menuLinks:[
+      {
+         name: 'home',
+         link: '/'
+      },
+      {
+         name: 'blog',
+         link: '/blog'
+      },
+      {
+        name: 'photography',
+        link: '/photography'
+      }
+    ]
+  },
   pathPrefix: "/Personal-Site",
   plugins: [
     {

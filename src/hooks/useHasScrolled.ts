@@ -11,6 +11,7 @@ const useHasScrolled = (offsetFromTop: number): boolean => {
         : setHasScrolled(false);
     }
     window.addEventListener("scroll", onScroll);
+    onScroll();
     return () => window.removeEventListener("scroll", onScroll);
   }, [offsetFromTop, hasScrolled]);
 

@@ -1,10 +1,6 @@
 import React from "react";
-import NavItem from "./NavItem";
 
 const NavBar = (props: NavBarProps): JSX.Element => {
-  const navListItems = props.navItems.map((navItem, indx) => {
-    return <NavItem item={navItem} key={`${navItem.text}${indx}`}></NavItem>;
-  });
   return (
     <nav
       className={`flex flex-wrap items-center justify-between px-2 py-2 mb-3 ${props.className}`}
@@ -19,9 +15,9 @@ const NavBar = (props: NavBarProps): JSX.Element => {
         </div>
         <div className="flex flex-grow items-center">
           <ul
-            className={`flex flex-row sm:ml-auto cursor-pointer ${props.navItemsStyle}`}
+            className={`flex flex-row sm:ml-auto cursor-pointer justify-between items-stretch ${props.navItemsStyle}`}
           >
-            {navListItems}
+            {props.navItems}
           </ul>
         </div>
       </div>

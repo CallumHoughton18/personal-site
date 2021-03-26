@@ -3,7 +3,7 @@ type NavBarProps = {
   className: string;
   titleStyle: string;
   navItemsStyle: string;
-  navItems: NavItem[];
+  navItems: JSX.Element[];
 };
 
 type NavItemProps = {
@@ -11,5 +11,5 @@ type NavItemProps = {
 };
 
 interface NavItem {
-  text: string;
+  item: React.ReactNode;
 }

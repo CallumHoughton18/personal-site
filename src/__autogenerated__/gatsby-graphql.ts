@@ -1593,8 +1593,8 @@ export type QuerySiteArgs = {
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
   port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
-  polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
+  polyfill?: Maybe<BooleanQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -1693,8 +1693,8 @@ export type Site = Node & {
   siteMetadata?: Maybe<SiteSiteMetadata>;
   port?: Maybe<Scalars["Int"]>;
   host?: Maybe<Scalars["String"]>;
-  polyfill?: Maybe<Scalars["Boolean"]>;
   pathPrefix?: Maybe<Scalars["String"]>;
+  polyfill?: Maybe<Scalars["Boolean"]>;
   id: Scalars["ID"];
   parent?: Maybe<Node>;
   children: Array<Node>;
@@ -1888,10 +1888,13 @@ export type SiteFieldsEnum =
   | "buildTime"
   | "siteMetadata___title"
   | "siteMetadata___description"
+  | "siteMetadata___menuLinks"
+  | "siteMetadata___menuLinks___name"
+  | "siteMetadata___menuLinks___link"
   | "port"
   | "host"
-  | "polyfill"
   | "pathPrefix"
+  | "polyfill"
   | "id"
   | "parent___id"
   | "parent___parent___id"
@@ -1984,8 +1987,8 @@ export type SiteFilterInput = {
   siteMetadata?: Maybe<SiteSiteMetadataFilterInput>;
   port?: Maybe<IntQueryOperatorInput>;
   host?: Maybe<StringQueryOperatorInput>;
-  polyfill?: Maybe<BooleanQueryOperatorInput>;
   pathPrefix?: Maybe<StringQueryOperatorInput>;
+  polyfill?: Maybe<BooleanQueryOperatorInput>;
   id?: Maybe<StringQueryOperatorInput>;
   parent?: Maybe<NodeFilterInput>;
   children?: Maybe<NodeFilterListInput>;
@@ -2562,11 +2565,27 @@ export type SitePluginSortInput = {
 export type SiteSiteMetadata = {
   title?: Maybe<Scalars["String"]>;
   description?: Maybe<Scalars["String"]>;
+  menuLinks?: Maybe<Array<Maybe<SiteSiteMetadataMenuLinks>>>;
 };
 
 export type SiteSiteMetadataFilterInput = {
   title?: Maybe<StringQueryOperatorInput>;
   description?: Maybe<StringQueryOperatorInput>;
+  menuLinks?: Maybe<SiteSiteMetadataMenuLinksFilterListInput>;
+};
+
+export type SiteSiteMetadataMenuLinks = {
+  name?: Maybe<Scalars["String"]>;
+  link?: Maybe<Scalars["String"]>;
+};
+
+export type SiteSiteMetadataMenuLinksFilterInput = {
+  name?: Maybe<StringQueryOperatorInput>;
+  link?: Maybe<StringQueryOperatorInput>;
+};
+
+export type SiteSiteMetadataMenuLinksFilterListInput = {
+  elemMatch?: Maybe<SiteSiteMetadataMenuLinksFilterInput>;
 };
 
 export type SiteSortInput = {
@@ -2603,6 +2622,20 @@ export type Unnamed_1_QueryVariables = Exact<{ [key: string]: never }>;
 export type Unnamed_1_Query = {
   file?: Maybe<{
     childImageSharp?: Maybe<{ fixed?: Maybe<GatsbyImageSharpFixedFragment> }>;
+  }>;
+};
+
+export type SiteQueryQueryVariables = Exact<{ [key: string]: never }>;
+
+export type SiteQueryQuery = {
+  site?: Maybe<{
+    siteMetadata?: Maybe<
+      Pick<SiteSiteMetadata, "title"> & {
+        menuLinks?: Maybe<
+          Array<Maybe<Pick<SiteSiteMetadataMenuLinks, "name" | "link">>>
+        >;
+      }
+    >;
   }>;
 };
 
