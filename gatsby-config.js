@@ -13,7 +13,7 @@ module.exports = {
          link: '/blog'
       },
       {
-        name: 'photography',
+        name: 'photos',
         link: '/photography'
       }
     ]
