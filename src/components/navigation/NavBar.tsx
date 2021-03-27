@@ -15,7 +15,7 @@ const NavBar = (props: NavBarProps): JSX.Element => {
         </div>
         <div className="flex flex-grow items-center">
           <ul
-            className={`flex flex-grow sm:flex-grow-0 flex-row sm:ml-auto cursor-pointer justify-center items-center list-none ${props.navItemsStyle}`}
+            className={`flex flex-grow sm:flex-grow-0 flex-row sm:ml-auto justify-center items-center list-none ${props.navItemsStyle}`}
           >
             {props.navItems}
           </ul>

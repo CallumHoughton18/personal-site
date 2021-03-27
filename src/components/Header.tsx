@@ -16,8 +16,9 @@ const Header = (): JSX.Element => {
           className=" text-xs text-nordSnowStorm-lighter uppercase tracking-wide font-bold py-2 ml-5 mr-5
           hover:text-nordSnowStorm-default focus:text-nordSnowStorm-default active:focus:text-nordSnowStorm-default select-none"
         >
-          <Link to={link.link} className="select-none invisible"></Link>
-          {link.name}
+          <Link to={link.link} className="">
+            {link.name}
+          </Link>
         </li>
       );
       return navLinkJsx;
