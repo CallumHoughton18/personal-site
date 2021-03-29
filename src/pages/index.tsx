@@ -28,13 +28,11 @@ const Home = (props: PageProps): JSX.Element => {
         </div>
       </Section>
       <Section style="pt-20 pb-20 pr-5 pl-5 md:p-20">
-        <div className="backdrop-blur">
-          <h2 className="text-center text-4xl font-bold tracking-wide mb-10 text-nordSnowStorm-light text-shadow-md">
-            Personal Projects
-          </h2>
-          <div className="flex flex-wrap items-start justify-center xl:ml-20 xl:mr-20">
-            <Projects />
-          </div>
+        <h2 className="text-center text-4xl font-bold tracking-wide mb-10 text-nordSnowStorm-light text-shadow-md">
+          Personal Projects
+        </h2>
+        <div className="flex flex-wrap items-start justify-center xl:ml-20 xl:mr-20">
+          <Projects />
         </div>
       </Section>
     </PageWithNavBar>
