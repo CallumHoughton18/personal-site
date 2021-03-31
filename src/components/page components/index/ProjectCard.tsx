@@ -32,7 +32,7 @@ const ProjectCard = ({
     );
   });
   return (
-    <Card cardStyle="max-w-xl overflow-hidden shadow-inner border-none sm:flex-50 xl:flex-25 sm:h-card mt-8 sm:m-8">
+    <Card className="max-w-xl overflow-hidden shadow-inner border-none sm:flex-50 xl:flex-25 sm:h-card mt-8 sm:m-8 bg-nordBg">
       <Img
         fluid={ProjectImg}
         alt="project name"
@@ -44,9 +44,14 @@ const ProjectCard = ({
       <div className="px-6 pb-4 pt-2">
         <div className=" text-gray-50 font-bold text-xl">{projectName}</div>
         <hr className="mb-5 border border-gray-100"></hr>
-        <p className="text-white text-sm leading-relaxed">{projectDesc}</p>
+        <p className="text-white text-sm leading-relaxed tracking-normal">
+          {projectDesc}
+        </p>
       </div>
-      <PillsCollection pillsText={projectTech} />
+      <PillsCollection
+        pillsText={projectTech}
+        pillStyle="bg-gray-200 mr-0.5 ml-0.5 mt-1 text-gray-700 tracking-wide"
+      />
     </Card>
   );
 };

@@ -7,14 +7,14 @@ const IntroCard = (): JSX.Element => {
   return (
     <div className="relative">
       <Card
-        cardStyle="lg:max-w-6xl backdrop-blur bg-opacity-80 border-gray-800"
+        className="lg:max-w-6xl backdrop-blur bg-opacity-80 border-gray-800 bg-nordBg"
         innerChildrenStyle="p-10"
       >
         <CircleAvatar />
-        <span className="font-sans text-center text-gray-400 sm:text-xl xl:text-2xl sm:mb-2 sm:mt-5 md:mb-5 md:mt-10 tracking-wide">
+        <span className="text-center text-gray-400 text-xl xl:text-2xl sm:mb-2 sm:mt-5 md:mb-5 md:mt-10 tracking-wide">
           Callum Houghton
         </span>
-        <h1 className="font-sans text-center text-gray-100 sm:text-4xl xl:text-7xl font-extrabold tracking-wide">
+        <h1 className="text-center text-gray-100 text-xl md:text-7xl font-extrabold tracking-wide">
           Web / Mobile Developer
         </h1>
       </Card>

@@ -13,7 +13,7 @@ const Header = (): JSX.Element => {
       const navLinkJsx = (
         <li
           key={`${link.name}-${indx}`}
-          className=" text-xs text-nordSnowStorm-lighter uppercase tracking-wide font-bold py-2 ml-5 mr-5
+          className=" text-sm text-nordSnowStorm-lighter uppercase tracking-wide font-bold py-2 ml-5 mr-5
           hover:text-nordSnowStorm-default focus:text-nordSnowStorm-default active:focus:text-nordSnowStorm-default select-none"
         >
           <Link to={link.link} className="">

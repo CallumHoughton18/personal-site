@@ -9,7 +9,3 @@ type NavBarProps = {
 type NavItemProps = {
   item: NavItem;
 };
-
-interface NavItem {
-  item: React.ReactNode;
-}

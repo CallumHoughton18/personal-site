@@ -7,9 +7,7 @@ type SectionProps = {
 
 const Section = ({ style, children }: SectionProps): JSX.Element => {
   return (
-    <section className={`bg-opacity-80 shadow-md h-screen ${style}`}>
-      {children}
-    </section>
+    <section className={`shadow-md h-screen ${style}`}>{children}</section>
   );
 };
 

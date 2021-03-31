@@ -2,11 +2,14 @@ import React from "react";
 
 type PillProps = {
   pillText: string;
+  className: string;
 };
 
-const Pill = ({ pillText }: PillProps): JSX.Element => {
+const Pill = ({ pillText, className }: PillProps): JSX.Element => {
   return (
-    <span className="inline-block bg-gray-200 rounded-full px-3 py-1 mr-0.5 ml-0.5 mt-1 text-xs font-semibold text-gray-700 tracking-wide">
+    <span
+      className={`inline-block rounded-full px-3 py-1 text-xs font-semibold ${className}`}
+    >
       {pillText}
     </span>
   );

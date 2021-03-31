@@ -19,7 +19,7 @@ const Home = (props: PageProps): JSX.Element => {
       <div className="flex items-center justify-center mt-10 mb-36">
         <IntroCard />
       </div>
-      <Section style="bg-nordBg p-20">
+      <Section style="bg-nordBg p-20 bg-opacity-80">
         <div className="text-gray-100">
           <h2 className=" text-center text-4xl font-bold tracking-wide text-nordSnowStorm-light text-shadow-md">
             Experience In:

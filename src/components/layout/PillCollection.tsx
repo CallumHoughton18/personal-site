@@ -3,11 +3,21 @@ import Pill from "./Pill";
 
 type PillCollectionProps = {
   pillsText: string[];
+  pillStyle: string;
 };
 
-const PillsCollection = ({ pillsText }: PillCollectionProps): JSX.Element => {
+const PillsCollection = ({
+  pillsText,
+  pillStyle,
+}: PillCollectionProps): JSX.Element => {
   const pills = pillsText.map((pillText, indx) => {
-    return <Pill pillText={pillText} key={`${pillText}-${indx}`} />;
+    return (
+      <Pill
+        pillText={pillText}
+        key={`${pillText}-${indx}`}
+        className={pillStyle}
+      />
+    );
   });
   return <div className="px-6 py-4">{pills}</div>;
 };

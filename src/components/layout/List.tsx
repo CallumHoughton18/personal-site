@@ -2,6 +2,7 @@ import React from "react";
 
 export type ListProps = {
   items: ListElement[];
+  className: string;
 };
 
 export type ListElement = {
@@ -9,7 +10,7 @@ export type ListElement = {
   content: JSX.Element;
 };
 
-const List = ({ items }: ListProps): JSX.Element => {
+const List = ({ items, className }: ListProps): JSX.Element => {
   const listItems = items.map((item, indx) => {
     return (
       <li key={`${item.id}-${indx}`} className="mb-1">
@@ -17,11 +18,7 @@ const List = ({ items }: ListProps): JSX.Element => {
       </li>
     );
   });
-  return (
-    <ul className="text-xl list-disc mb-5 md:mb-0 tracking-widest">
-      {listItems}
-    </ul>
-  );
+  return <ul className={className}>{listItems}</ul>;
 };
 
 export default List;

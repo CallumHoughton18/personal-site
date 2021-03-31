@@ -1,19 +1,19 @@
 import React, { ReactNode } from "react";
 
 type CardProps = {
-  cardStyle?: string;
+  className?: string;
   innerChildrenStyle?: string;
   children?: ReactNode;
 };
 
 const Card = ({
-  cardStyle,
+  className,
   innerChildrenStyle,
   children,
 }: CardProps): JSX.Element => {
   return (
     <div
-      className={`flex flex-row rounded-lg border shadow-l bg-nordBg border-transparent ${cardStyle}`}
+      className={`flex flex-row rounded-lg border shadow-l border-transparent ${className}`}
     >
       <div
         className={`flex flex-col justify-start items-center ${innerChildrenStyle}`}
