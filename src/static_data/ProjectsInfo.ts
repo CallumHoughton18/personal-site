@@ -19,7 +19,7 @@ const ProjectInfo = (): ProjectInfo[] => {
         {
           icon: faGithub,
           link: "https://github.com/CallumHoughton18/XLSXBulkDataExtractor",
-          style: "mr-5",
+          className: "mr-5",
         },
       ],
       tech: ["C#", "WPF", "ClosedXML", "Azure Pipelines"],
@@ -33,23 +33,23 @@ const ProjectInfo = (): ProjectInfo[] => {
           icon: faGithub,
           link:
             "https://github.com/CallumHoughton18/Mushroom-Classification-Front-End",
-          style: "mr-5",
+          className: "mr-5",
         },
         {
           icon: faGithub,
           link: "https://github.com/CallumHoughton18/Mushroom-Classification",
-          style: "mr-5",
+          className: "mr-5",
         },
         {
           icon: faGithub,
           link:
             "https://github.com/CallumHoughton18/Mushroom-Classification-Deployment",
-          style: "mr-5",
+          className: "mr-5",
         },
         {
           icon: faExternalLinkAlt,
           link: "https://mushroomai.site/",
-          style: "",
+          className: "",
         },
       ],
       tech: ["Python", "Flask", "ReactJS", "TypeScript", "Docker", "Jenkins"],
@@ -62,17 +62,17 @@ const ProjectInfo = (): ProjectInfo[] => {
         {
           icon: faGithub,
           link: "https://github.com/CallumHoughton18/PiRoverController",
-          style: "mr-5",
+          className: "mr-5",
         },
         {
           icon: faGithub,
           link: "https://github.com/CallumHoughton18/PiRoverWebServer",
-          style: "mr-5",
+          className: "mr-5",
         },
         {
           icon: faYoutube,
           link: "https://www.youtube.com/watch?v=dnlcQPna3ew",
-          style: "",
+          className: "",
         },
       ],
       tech: ["Python", "Django", "C#", "Xamarin", "Azure Pipelines"],
@@ -85,12 +85,12 @@ const ProjectInfo = (): ProjectInfo[] => {
         {
           icon: faGithub,
           link: "https://github.com/CallumHoughton18/Local-Crimes-Map",
-          style: "mr-5",
+          className: "mr-5",
         },
         {
           icon: faExternalLinkAlt,
           link: "https://localcrimesmap.herokuapp.com/",
-          style: "",
+          className: "",
         },
       ],
       tech: ["Python", "Django", "JavaScript", "Postgres"],
@@ -103,13 +103,13 @@ const ProjectInfo = (): ProjectInfo[] => {
         {
           icon: faGithub,
           link: "https://github.com/CallumHoughton18/ChemViewAR",
-          style: "mr-5",
+          className: "mr-5",
         },
         {
           icon: faMobile,
           link:
             "https://play.google.com/store/apps/details?id=com.Callum.ChemViewAR",
-          style: "mr-5",
+          className: "mr-5",
         },
         {
           icon: faExternalLinkAlt,

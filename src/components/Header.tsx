@@ -13,8 +13,8 @@ const Header = (): JSX.Element => {
       const navLinkJsx = (
         <li
           key={`${link.name}-${indx}`}
-          className=" text-sm text-nordSnowStorm-lighter uppercase tracking-wide font-bold py-2 ml-5 mr-5
-          hover:text-nordSnowStorm-default focus:text-nordSnowStorm-default active:focus:text-nordSnowStorm-default select-none"
+          className=" text-sm text-snowStorm-lightest uppercase tracking-wide font-bold py-2 ml-5 mr-5
+          hover:text-gray-300 focus:text-blueGray-300 active:text-blueGray-300 select-none"
         >
           <Link to={link.link} className="">
             {link.name}
@@ -29,10 +29,10 @@ const Header = (): JSX.Element => {
     <NavBar
       title="{ Callums.Site }"
       navItems={navItems}
-      titleStyle="text-nordSnowStorm-lighter tracking-wide uppercase text-sm font-bold"
+      titleStyle="text-snowStorm-lightest tracking-wide uppercase text font-bold"
       navItemsStyle=""
-      className={`rounded-b-sm transition-colors duration-75 ease-linear ${
-        hasScrolled ? "bg-nordBg shadow-md" : "bg-transparent"
+      className={`rounded-b-sm transition-colors duration-75 ease-linear text-base ${
+        hasScrolled ? "bg-polarNight-lighter shadow-md" : "bg-transparent"
       }`}
     ></NavBar>
   );

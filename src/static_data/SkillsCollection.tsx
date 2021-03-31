@@ -19,7 +19,7 @@ type SkillsList = {
 };
 
 const SkillsCollection = (): SkillsList => {
-  const iconStyle = "inline text-nordGreen text-2xl";
+  const iconStyle = "inline text-aurora-green text-2xl";
   const languages: ListElement[] = [
     {
       id: "csharp",

@@ -1,10 +1,6 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
     extend: {
@@ -13,22 +9,30 @@ module.exports = {
       })
     },
     colors: {
-      nordBlue: {
-        DEFAULT: '#5e81ac'
+      polarNight: {
+        darkest: '#2e3440',
+        DEFAULT: '#3b4252',
+        lighter: '#434c5e',
+        lightest: '#4c566a',
       },
-      nordBg: {
-        light: '#3b4252',
-        DEFAULT: '#434c5e',
-        dark: '#2e3440'
+      snowStorm: {
+        darkest: '#eceff4',
+        DEFAULT: '#e5e9f0',
+        lightest: '#eceff4'
       },
-      nordGreen: {
-        DEFAULT: '#a3be8c'
+      frost: {
+        blue: '#5e81ac',
+        grayblue: '#81a1c1',
+        cyan: '#88c0d0',
+        lightgreen: '#8fbcbb'
       },
-      nordSnowStorm: {
-        lighter: "#e5e9f0",
-        light: '#eceff4',
-        default: '#d8dee9'
-      },
+      aurora: {
+        pink: '#b48ead',
+        green: '#a3be8c',
+        yellow: '#ebcb8b',
+        orange: '#d08770',
+        red: '#bf616a'
+      },  
       transparent: 'transparent',
       current: 'currentColor',
       black: colors.black,
@@ -37,6 +41,7 @@ module.exports = {
       indigo: colors.indigo,
       red: colors.rose,
       yellow: colors.amber,
+      blueGray: colors.blueGray,
     },
     width: {
       'overflow': '102%',
