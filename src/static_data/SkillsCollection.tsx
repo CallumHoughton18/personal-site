@@ -1,16 +1,14 @@
 import React from "react";
 import { ListElement } from "@/components/layout/List";
-import {
-  SiAzuredevops,
-  SiCsharp,
-  SiDotNet,
-  SiHockeyapp,
-  SiJenkins,
-  SiPython,
-  SiReact,
-  SiTypescript,
-  SiXamarin,
-} from "react-icons/si";
+import { SiAzuredevops } from "@react-icons/all-files/si/SiAzuredevops";
+import { SiCsharp } from "@react-icons/all-files/si/SiCsharp";
+import { SiDotNet } from "@react-icons/all-files/si/SiDotNet";
+import { SiHockeyapp } from "@react-icons/all-files/si/SiHockeyapp";
+import { SiJenkins } from "@react-icons/all-files/si/SiJenkins";
+import { SiPython } from "@react-icons/all-files/si/SiPython";
+import { SiReact } from "@react-icons/all-files/si/SiReact";
+import { SiTypescript } from "@react-icons/all-files/si/SiTypescript";
+import { SiXamarin } from "@react-icons/all-files/si/SiXamarin";
 
 type SkillsList = {
   languages: ListElement[];

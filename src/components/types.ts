@@ -1,7 +1,5 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-
 export type IconWithLinks = {
-  icon: IconProp;
+  icon: JSX.Element;
   link: string;
   className?: string;
 };

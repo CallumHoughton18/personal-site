@@ -51,7 +51,14 @@ module.exports = {
         path: `${__dirname}/src/images/project_images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
+      options: {
+        analyzerMode: 'server',
+        analyzerPort: 3005,
+      }
+    },
     `gatsby-transformer-sharp`, 
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
   ],
 };

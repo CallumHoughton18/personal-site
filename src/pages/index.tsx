@@ -5,7 +5,6 @@ import IntroCard from "@/components/page components/index/IntroCard";
 import Section from "@/components/layout/Section";
 import Skills from "@/components/page components/index/Skills";
 import Projects from "@/components/page components/index/Projects";
-import "@fortawesome/fontawesome-svg-core/styles.css";
 import Header from "@/components/Header";
 import PageWithNavBar from "@/components/layout/PageWithHeader";
 
