@@ -2,7 +2,7 @@ import React from "react";
 import Header from "@/components/Header";
 import PageWithNavBar from "@/components/layout/PageWithHeader";
 import useBlogPostsQuery from "@/hooks/useBlogPostsQuery";
-import PostSummary from "@/components/page components/blog/postSummary";
+import PostSummary from "@/components/page components/blog/PostSummary";
 
 const Blog = (): JSX.Element => {
   const posts = useBlogPostsQuery();
