@@ -14,7 +14,6 @@ const PostSummary = ({
   title,
   excerpt,
   date,
-  postExternalLink,
   postInternalLink,
 }: PostSummaryProps): JSX.Element => {
   return (
@@ -31,14 +30,7 @@ const PostSummary = ({
         </a>
       </div>
       <div className="mt-5">
-        {/* <a
-          className="text-2xl text-polarNight-darkest font-bold hover:text-gray-600"
-          href={postLink}
-          target="_blank"
-          rel="noopener noreferrer"
-        > */}
-        {title}
-        {/* </a> */}
+        <span className="font-bold text-lg to-polarNight-darkest">{title}</span>
         <p className="mt-5 text-polarNight-lightest">{excerpt}</p>
       </div>
       <div className="flex justify-between items-center mt-8">
