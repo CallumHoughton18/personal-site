@@ -13,7 +13,8 @@ const Blog = (): JSX.Element => {
       author={post.frontmatter.author}
       date={post.frontmatter.date}
       excerpt={post.excerpt}
-      postLink={post.frontmatter.externalUrl}
+      postExternalLink={post.frontmatter.externalUrl}
+      postInternalLink={post.fields.slug}
     />
   ));
   return (

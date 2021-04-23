@@ -14,6 +14,9 @@ const useBlogPostsQuery = (): BlogPostsQuery => {
           }
           excerpt
           id
+          fields {
+            slug
+          }
         }
       }
     }
