@@ -52,7 +52,7 @@ const ProjectInfo = (): ProjectInfo[] => {
         },
         {
           icon: <FaExternalLinkAlt />,
-          link: "https://mushroomai.site/",
+          link: "https://mushrooml.callums-stuff.net/",
           className: commonStyle,
         },
       ],
